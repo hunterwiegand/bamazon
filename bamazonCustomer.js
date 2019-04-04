@@ -65,9 +65,9 @@ function promptForPurchase(id, stock_quantity) {
 
         //Check to see if the selected item is in stock
         console.log(stock_quantity);
-        if (stock_quantity <= answer.amount) {
+        if (stock_quantity < answer.amount) {
             console.log("Sorry, we don't have enough");
-            displayInventory();
+            return displayInventory();
         }
 
 
@@ -126,7 +126,3 @@ function displayInventory() {
         }
     )
 }
-
-
-
-//Prompt user how much of the selected item they would like to buy
