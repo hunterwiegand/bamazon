@@ -1,5 +1,1 @@
 # bamazon
-
-# demo
-
-![](gifs.gif)
